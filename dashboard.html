@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geoportal Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1c1c1c;
+            color: #fff;
+            overflow: auto;
+        }
+
+        .container {
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        .sidebar {
+            width: 300px;
+            background-color: #2b2b2b;
+            padding: 20px;
+            position: fixed;
+            left: 0;
+            top: 0;
+            height: 100%;
+        }
+
+        .logo {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .logo img {
+            width: 80%;
+            margin-bottom: 10px;
+        }
+
+        .logo h2 {
+            font-size: 24px;
+            color: #f7a500;
+        }
+
+        nav ul {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        nav ul li {
+            margin: 15px 0;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            color: #f7a500;
+        }
+
+        .main-content {
+            margin-left: 300px;
+            padding: 20px;
+            height: 100vh;
+            overflow-y: auto;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .header h1 {
+            font-size: 30px;
+        }
+
+        .intro {
+            margin-top: 40px;
+            background-color: #333;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        .intro h2 {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+
+        .intro p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .intro-img {
+            width: 100%;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 8px;
+        }
+
+        .card-section {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
+
+        .card {
+            background-color: #333;
+            width: 30%;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card-img {
+            width: 100%;
+            height: auto;
+        }
+
+        .card-info {
+            padding: 10px;
+            text-align: center;
+        }
+
+        .card-info h4 {
+            margin-bottom: 10px;
+            font-size: 18px;
+            color: #f7a500;
+        }
+
+        .card-info p {
+            font-size: 14px;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar -->
+        <div class="sidebar">
+            <div class="logo">
+                <img src="logo.png" alt="Geoportal Logo">
+                <h2>Geoportal Dashboard</h2>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#dashboard">Dashboard</a></li>
+                    <li><a href="#maps">Maps</a></li>
+                    <li><a href="#reports">Reports</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <div class="header">
+                <h1>Geoportal Dashboard</h1>
+            </div>
+
+            <section class="intro">
+                <h2>Welcome to the Geoportal</h2>
+                <p>This dashboard provides tools for geospatial analysis, boundary mapping, and more. Explore the features below to get started.</p>
+                <img src="morocco-spain-map.png" alt="Geoportal Overview" class="intro-img">
+            </section>
+
+            <div class="card-section">
+                <div class="card">
+                    <img src="map.png" alt="Interactive Maps" class="card-img">
+                    <div class="card-info">
+                        <h4>Interactive Maps</h4>
+                        <p>Explore geospatial data visually.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="field.png" alt="Analytics" class="card-img">
+                    <div class="card-info">
+                        <h4>Data Analytics</h4>
+                        <p>Analyze trends and patterns in data.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="legal.png" alt="Reports" class="card-img">
+                    <div class="card-info">
+                        <h4>Reports</h4>
+                        <p>Generate legal reports.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="reports.png" alt="Reports" class="card-img">
+                    <div class="card-info">
+                        <h4>Reports</h4>
+                        <p>Generate detailed geospatial reports.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
